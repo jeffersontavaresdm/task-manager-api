@@ -27,7 +27,7 @@ public class TaskManagerController {
     public ResponseEntity<APIResponse<Object>> list() {
         return APIResponse.response(
             HttpStatus.OK,
-            "Task saved successfully",
+            "List of task",
             Collections.emptyList()
         );
     }
