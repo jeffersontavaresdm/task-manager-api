@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres-task-manager-api
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: tma
+      POSTGRES_USER: tma
+      POSTGRES_DB: tma
+
+#  rabbit:
+#    build:
+#      context: ./hack/rabbitmq
+#    container_name: rabbit-abyky-core
+#    ports:
+#      - "5672:5672"
+#      - "15672:15672"
